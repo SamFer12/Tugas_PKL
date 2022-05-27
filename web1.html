@@ -17,39 +17,51 @@
             }
             .flex {
                 width: 700px;
-                margin: 30px auto;
                 padding:5px ;
                 display: flex;
-                height: 400px;
+                height: 70px;
+                justify-content: start;
             }
             .flex1{
                 padding: 2px;
                 width: 300px;
-                margin-left: 40px;
-                height: 40px;
-                border-radius: 17px;
-                border: 2px solid #000;
+                height: 35px;
+                border-radius: 25px;
+                border: 2px solid rgb(197, 189, 189);
                 margin-right: 30px;
             }
             .flex2 {
                 width: 200px;
                 font-size: x-large;
-                color: aqua;
+                color: #00BBBB;
                 margin-left: 50px;
+                text-shadow: 1px ;
             }
     </style>
 </head>
 <body>
     <div style="background-image:url('aqua.png'); width: 1400px; height: 1000px;" >
          <div class="satu">
-             <div style="color: aqua; font-size: xx-large; margin-left: 250px; margin-top: 100px; font-style: Times New Roman">From Daftar</div>
-             <div style="margin-left: 300px;margin-top: 20px;">Sign Up</div>
+             <div style="color: #00BBBB; font-size: xx-large; margin-left: 300px; margin-top: 100px; font-style: Times New Roman">From Daftar</div>
+             <div style="margin-left: 350px;margin-top: 20px;">Sign Up</div>
              <div class="flex" style="margin-top: 20px;">
                  <div class="flex2">Your name</div>
-                 <div class="flex1"></div>
-                 <div class="flex1"></div>
+                    <input type="text" name="fname" id="name"  class="flex1 w-45" style="margin-left: 30px;" placeholder="First Name">
+                    <input type="text" name="lname" id="name" class="flex1" style="margin-right: 35px;" placeholder="Last Name">
              </div>
+             <div class="flex" style="margin-top: 25px;">
+                <div class="flex2 w-40" >Your Email</div>
+                <input type="text" name="Email" id="email" class="flex1" placeholder="Email">
+            </div>
+            <div class="flex" style="margin-top: 25px;">
+                <div class="flex2">Location</div>
+                <input type="text" name="kota" id="kota" class="flex1" style="margin-left: 20px;" placeholder="Kota">
+                <input type="text" name="provinsi" id="provinsi" class="flex1" placeholder="Provinsi">
+            </div>
+            <div class="flex">
+                <button type="button" class="flex w-20" style="margin-left: 450px; background-color: #FFED00; color: white; border-radius: 25px; height:35px;">Daftar</button>
+            </div>
          </div>
     </div>
-</body>
+</body3>
 </html>
